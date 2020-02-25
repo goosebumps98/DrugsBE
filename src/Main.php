@@ -19,5 +19,17 @@ class Main extends PluginBase implements Listener{
             $this->getServer()->getPluginManager()->registerEvents($this, $this);
 
         }
+        public function onItemConsume(PlayerInteractEvent $event){
+            $player = $event->getPlayer();
+            $item = $event->getItem();
+                
+  if ($item->getId() === ItemIds::(353)){
+          
+          $effect = Effect::getEffect(Effect::HASTE)->setDuration(INT32_MAX);
+          $player->addEffect($effect)
+} else if ($item->getId() === ItemIds::(ID)) {
 
+  }
+
+}
 
