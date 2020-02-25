@@ -1,0 +1,5 @@
+name: Drugs
+main: DrugsBE\Main
+version: 1.0
+api: 3.0.0
+author: Mack
