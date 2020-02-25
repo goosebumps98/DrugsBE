@@ -1,5 +1,5 @@
 name: Drugs
-main: src\Main
+main: drugs\Main
 version: 1.0
 api: 3.0.0
 author: Mack
