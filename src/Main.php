@@ -24,18 +24,49 @@ class Main extends PluginBase implements Listener{
         public function onItemConsume(PlayerInteractEvent $event){
             $player = $event->getPlayer();
             $item = $event->getItem();
+                $p = $ev->getPlayer();
                 
   if ($item->getId() === ItemIds::(353)){
           
-          $effect = Effect::getEffect(Effect::HASTE)->setDuration(INT32_MAX);
-          $p->addEffect(new EffectInstance($effect,$time,$amp,true))
+          $effect = Effect::getEffect(Effect::HASTE);
+          $speed = Effect::getEffect(Effect::SPEED);
+          $time = 600;
+          $amp = 2;
+          $p->addEffect(new EffectInstance($effect,$time,$amp,true));
+          $p->addEffect(new EffectInstance($speed,$time,$amp,true));
+          $p->sendMessage(TextFormat::DARK_GRAY . "Booger Sugar Injested ");
 } 
-   if ($item->getId() === ItemIds::(ID)) {
+   if ($item->getId() === ItemIds::(296)) {
 
-           $effect = Effect::getEffect(Effect::HASTE)->setDuration(INT32_MAX);
-          $p->addEffect(new EffectInstance($effect,$time,$amp,true))
+          $effect = Effect::getEffect(Effect::SLOWNESS);
+          $speed = Effect::getEffect(Effect::LEVITATION);
+          $time = 600;
+          $amp = 1;
+          $p->addEffect(new EffectInstance($effect,$time,$amp,true));
+          $p->addEffect(new EffectInstance($speed,$time,$amp,true));
+          $p->sendMessage(TextFormat::DARK_GRAY . "Gas Inhaled");
   }
-                
+          if ($item->getId() === ItemIds::(39)) {
+
+          $effect = Effect::getEffect(Effect::SLOWNESS);
+          $speed = Effect::getEffect(Effect::NAUSEA);
+          $time = 600;
+          $amp = 1;
+          $p->addEffect(new EffectInstance($effect,$time,$amp,true));
+          $p->addEffect(new EffectInstance($speed,$time,$amp,true));
+          $p->sendMessage(TextFormat::DARK_GRAY . "Shroms Have Been Injested");
+  }
+        
+          if ($item->getId() === ItemIds::(115)) {
+
+          $effect = Effect::getEffect(Effect::JUMP_BOOST);
+          $speed = Effect::getEffect(Effect::LEVITATION);
+          $time = 600;
+          $amp = 1;
+          $p->addEffect(new EffectInstance($effect,$time,$amp,true));
+          $p->addEffect(new EffectInstance($speed,$time,$amp,true));
+          $p->sendMessage(TextFormat::DARK_GRAY . "ACID STRIP!!!");
+  }
 
 }
 
