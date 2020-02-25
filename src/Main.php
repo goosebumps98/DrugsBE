@@ -26,7 +26,7 @@ class Main extends PluginBase implements Listener{
             $item = $event->getItem();
                 $p = $ev->getPlayer();
                 
-  if ($item->getId() === ItemIds::(353)){
+  if ($item->getId() === ItemIds::(SUGAR)){
           
           $effect = Effect::getEffect(Effect::HASTE);
           $speed = Effect::getEffect(Effect::SPEED);
@@ -36,7 +36,7 @@ class Main extends PluginBase implements Listener{
           $p->addEffect(new EffectInstance($speed,$time,$amp,true));
           $p->sendMessage(TextFormat::DARK_GRAY . "Booger Sugar Injested ");
 } 
-   if ($item->getId() === ItemIds::(296)) {
+   if ($item->getId() === ItemIds::(WHEAT)) {
 
           $effect = Effect::getEffect(Effect::SLOWNESS);
           $speed = Effect::getEffect(Effect::LEVITATION);
@@ -46,7 +46,7 @@ class Main extends PluginBase implements Listener{
           $p->addEffect(new EffectInstance($speed,$time,$amp,true));
           $p->sendMessage(TextFormat::DARK_GRAY . "Gas Inhaled");
   }
-          if ($item->getId() === ItemIds::(39)) {
+          if ($item->getId() === ItemIds::(RED_MUSHROOM)) {
 
           $effect = Effect::getEffect(Effect::SLOWNESS);
           $speed = Effect::getEffect(Effect::NAUSEA);
@@ -57,7 +57,7 @@ class Main extends PluginBase implements Listener{
           $p->sendMessage(TextFormat::DARK_GRAY . "Shroms Have Been Injested");
   }
         
-          if ($item->getId() === ItemIds::(115)) {
+          if ($item->getId() === ItemIds::(NETHER_WART)) {
 
           $effect = Effect::getEffect(Effect::JUMP_BOOST);
           $speed = Effect::getEffect(Effect::LEVITATION);
