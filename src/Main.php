@@ -6,6 +6,8 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\{Server, Player};
 use pocketmine\event\player\{PlayerJoinEvent, PlayerQuitEvent};
+use pocketmine\entity\Effect;
+use pocketmine\entity\EffectInstance;
 
 
 class Main extends PluginBase implements Listener{
@@ -26,10 +28,14 @@ class Main extends PluginBase implements Listener{
   if ($item->getId() === ItemIds::(353)){
           
           $effect = Effect::getEffect(Effect::HASTE)->setDuration(INT32_MAX);
-          $player->addEffect($effect)
-} else if ($item->getId() === ItemIds::(ID)) {
+          $p->addEffect(new EffectInstance($effect,$time,$amp,true))
+} 
+   if ($item->getId() === ItemIds::(ID)) {
 
+           $effect = Effect::getEffect(Effect::HASTE)->setDuration(INT32_MAX);
+          $p->addEffect(new EffectInstance($effect,$time,$amp,true))
   }
+                
 
 }
 
