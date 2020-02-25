@@ -1,6 +1,6 @@
 <?php
 
-namespace Drugs;
+namespace drugs;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
@@ -8,6 +8,7 @@ use pocketmine\{Server, Player};
 use pocketmine\event\player\{PlayerJoinEvent, PlayerQuitEvent};
 use pocketmine\entity\Effect;
 use pocketmine\entity\EffectInstance;
+use pocketmine\item\ItemIds;
 
 
 class Main extends PluginBase implements Listener{
